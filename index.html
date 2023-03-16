@@ -9,9 +9,32 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body></body>
+  <body>
+    <div
+      class="flex flex-col h-screen md:flex-row md:items-center md:justify-center"
+    >
+      <div
+        class="flex flex-col items-center justify-center text-center gap-5 py-10 px-14 rounded-b-3xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue md:rounded-3xl"
+      >
+        <h1 class="text-light-lavender font-semibold">Your Result</h1>
+        <div
+          class="flex flex-col items-center justify-center bg-gradient-to-b from-violet-blue to-persian-blue rounded-full w-36 h-36"
+        >
+          <h2 class="text-white text-6xl font-bold">76</h2>
+          <h4 class="text-light-lavender font-bold">of 100</h4>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h2 class="text-white text-xl font-semibold">Great</h2>
+          <p class="text-light-lavender">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div>02</div>
+    </div>
+  </body>
 </html>
