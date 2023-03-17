@@ -14,27 +14,80 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <div
-      class="flex flex-col h-screen md:flex-row md:items-center md:justify-center"
-    >
+    <div class="flex flex-col h-screen items-center justify-center">
       <div
-        class="flex flex-col items-center justify-center text-center gap-5 py-10 px-14 rounded-b-3xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue md:rounded-3xl"
+        class="flex flex-col mx-auto bg-white rounded-3xl shadow-2xl shadow-light-lavender md:flex-row md:items-center md:justify-center md:w-3/5"
       >
-        <h1 class="text-light-lavender font-semibold">Your Result</h1>
         <div
-          class="flex flex-col items-center justify-center bg-gradient-to-b from-violet-blue to-persian-blue rounded-full w-36 h-36"
+          class="flex flex-col items-center justify-center h-full text-center gap-5 py-12 px-12 rounded-b-3xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue md:w-1/2 md:rounded-3xl"
         >
-          <h2 class="text-white text-6xl font-bold">76</h2>
-          <h4 class="text-light-lavender font-bold">of 100</h4>
+          <h1 class="text-light-lavender font-medium">Your Result</h1>
+          <div
+            class="flex flex-col items-center justify-center bg-gradient-to-b from-violet-blue to-persian-blue rounded-full w-36 h-36"
+          >
+            <h2 class="text-white text-6xl font-bold">76</h2>
+            <h4 class="text-light-lavender font-bold">of 100</h4>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h2 class="text-white text-xl font-medium">Great</h2>
+            <p class="text-light-lavender font-normal text-body">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
         </div>
-        <div class="flex flex-col gap-2">
-          <h2 class="text-white text-xl font-semibold">Great</h2>
-          <p class="text-light-lavender">
-            You scored higher than 65% of the people who have taken these tests.
-          </p>
+        <div class="flex flex-col p-7 gap-7 md:w-1/2">
+          <h2 class="text-lg font-medium text-dark-gray-blue">Summary</h2>
+          <div class="flex flex-col gap-3">
+            <div class="flex justify-between bg-light-red/5 p-4 rounded-xl">
+              <div class="flex gap-3">
+                <img
+                  src="assets/images/icon-reaction.svg"
+                  alt="reaction icon"
+                />
+                <h3 class="font-medium text-light-red">Reaction</h3>
+              </div>
+              <h3 class="font-medium text-dark-gray-blue">
+                80 <span class="text-dark-gray-blue/50">/ 100</span>
+              </h3>
+            </div>
+            <div
+              class="flex justify-between bg-orangey-yellow/5 p-4 rounded-xl"
+            >
+              <div class="flex gap-3">
+                <img src="assets/images/icon-memory.svg" alt="memory icon" />
+                <h3 class="font-medium text-orangey-yellow">Memory</h3>
+              </div>
+              <h3 class="font-medium text-dark-gray-blue">
+                80 <span class="text-dark-gray-blue/50">/ 100</span>
+              </h3>
+            </div>
+            <div class="flex justify-between bg-green-teal/5 p-4 rounded-xl">
+              <div class="flex gap-3">
+                <img src="assets/images/icon-verbal.svg" alt="verbal icon" />
+                <h3 class="font-medium text-green-teal">Verbal</h3>
+              </div>
+              <h3 class="font-medium text-dark-gray-blue">
+                80 <span class="text-dark-gray-blue/50">/ 100</span>
+              </h3>
+            </div>
+            <div class="flex justify-between bg-cobalt-blue/5 p-4 rounded-xl">
+              <div class="flex gap-3">
+                <img src="assets/images/icon-visual.svg" alt="visual icon" />
+                <h3 class="font-medium text-cobalt-blue">Visual</h3>
+              </div>
+              <h3 class="font-medium text-dark-gray-blue">
+                80 <span class="text-dark-gray-blue/50">/ 100</span>
+              </h3>
+            </div>
+          </div>
+          <button
+            class="font-medium text-white bg-dark-gray-blue p-4 rounded-full"
+          >
+            Continue
+          </button>
         </div>
       </div>
-      <div>02</div>
     </div>
   </body>
 </html>
