@@ -757,14 +757,6 @@ video {
     width: 41.666667%;
   }
 
-  .md\:w-6\/12 {
-    width: 50%;
-  }
-
-  .md\:w-7\/12 {
-    width: 58.333333%;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
